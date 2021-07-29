@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Input Form</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="block">
+        <div class="center-align">
+            <img id="logo" src="./images/Groww_app_logo.png">
+        </div>
+        <form id="newForm">
+            <!-- Name -->
+            <label>First Name :</label>
+            <input id="fname" placeholder="First Name" type="text" autofocus required oninvalid="this.setCustomValidity('Please Enter First Name Without Spaces')" oninput="this.setCustomValidity('')" pattern ="/^\S*$/">
+            <label>Last Name :</label>
+            <input id="lname" placeholder="Last Name" type="text" required oninvalid="this.setCustomValidity('Please Enter Last Name Here')" oninput="this.setCustomValidity('')">
+
+            <!-- Gender Radio Button-->
+            <label>Gender :</label>
+                <div class="radio-inline">
+                    <label><input class="radio" type="radio" value="male" name="gender" required oninvalid="this.setCustomValidity('Please Select Gender')" oninput="this.setCustomValidity('')">Male</label>
+                    <label><input class="radio" type="radio" value="female" name="gender">Female</label>
+                </div>
+
+            <!-- Martial Status Radio Button-->
+            <label>Martial Status :</label>
+            <div class="radio-inline">
+                <label><input class="radio" type="radio" value="married" name="martial" onchange=displaySpouse(this.value) >Married</label>
+                <label><input class="radio" type="radio" value="unmarried" name="martial" onchange=displaySpouse(this.value) checked>Unmarried</label>
+            </div>
+
+            <!--Conditional Name of Spouse-->
+            <div id="spouse">
+            <label>Name of Spouse :</label>
+            <input id="spouse" placeholder="Spouse Name" type="text">
+            </div>
+
+            <!-- Other Details -->
+            <label>Other Details :</label>
+            <textarea id="other" placeholder="Other Details" type="text"></textarea> 
+
+            <input class="checkbox" type="checkbox" id="tnc" required oninvalid="this.setCustomValidity('Please Accept our Terms and Conditions')" oninput="this.setCustomValidity('')">
+            <label for="tnc"> I accept the <a href="#">Terms and Conditions</a></label>
+
+            <!-- Submit -->
+            <div id="buttons">
+            <button id="reset" type="reset" onclick=resetCall()>Reset</button>
+            <button id="submit" type="submit">Save</button>
+            </div>
+         </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

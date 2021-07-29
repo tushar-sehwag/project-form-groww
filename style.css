@@ -1,0 +1,85 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    *{font-family:'Lato',sans-serif}
+    img#logo{
+        width: 70%;
+        margin-bottom: 5vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.block{
+        width:350px;
+        height:auto;
+        margin:50px auto 0;
+        padding:50px;
+        background-color:#EEE;
+        color:#333;
+        border-radius:10px;
+    }
+    label{font-size:15px;}
+
+    input, textarea{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        margin-top:10px;
+        margin-bottom:10px;
+        padding-left:15px;
+        width:310px;
+        height:30px;
+        font-size:14px;
+        background-repeat:no-repeat;
+        background-position:6px;
+        border:1px solid #DADADA;
+    }
+    .radio-inline {display: flex; flex:1}
+
+    input.radio{
+        margin: 15px 0;
+        width:50px;
+        height:17px;
+        box-shadow: none;
+        
+    }
+    input.checkbox{
+        margin: 15px 0;
+        width:30px;
+        height:14px;
+        box-shadow: none;
+    }
+    div#spouse{ display: none;}
+
+    div#buttons{display: flex;flex: 1;}
+
+    button#submit {
+        background-color:#5367ff;
+        border-radius:5px;
+        border:none;
+        margin-top: 30px;
+        padding:10px 25px;
+        color:#FFF;
+  
+        margin-left:5px;
+        width:49%
+        
+    }
+    button#submit:hover{
+        background-color:#00ecb3;
+        color:#333;
+
+    }
+    button#reset {
+        background-color:#f72d2d;
+        border-radius:5px;
+        border:none;
+        padding:10px 25px;
+        color:#FFF;
+        margin-top: 30px;
+        margin-right: 5px;
+     
+        width:49%
+        
+    }
+    button#reset:hover{
+        background-color:#a50606;
+        color:#fff;
+
+    }
