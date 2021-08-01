@@ -11,13 +11,16 @@
 <body>
     <div class="block">
         <div class="center-align">
-            <img id="logo" src="./images/Groww_app_logo.png">
+            <img id="logo" src="./images/Groww_app_logo.png" alt="">
         </div>
-        <form id="newForm">
+        <form id="newForm" onsubmit="return validateForm()">
             <!-- Name -->
-            <label>First Name :</label>
-            <input id="fname" placeholder="First Name" type="text" autofocus required oninvalid="this.setCustomValidity('Please Enter First Name Without Spaces')" oninput="this.setCustomValidity('')" pattern ="/^\S*$/">
-            <label>Last Name :</label>
+            <label for="fname">First Name :</label>
+            <input id="fname" placeholder="First Name" type="text" autofocus required oninvalid="this.setCustomValidity('Please Enter First Name Without Spaces')" oninput="this.setCustomValidity('')">
+            <div class="alert-box fname-space"> 
+                Please Enter First Name without Spaces.
+              </div>
+            <label for="lname">Last Name :</label>
             <input id="lname" placeholder="Last Name" type="text" required oninvalid="this.setCustomValidity('Please Enter Last Name Here')" oninput="this.setCustomValidity('')">
 
             <!-- Gender Radio Button-->
@@ -36,8 +39,11 @@
 
             <!--Conditional Name of Spouse-->
             <div id="spouse">
-            <label>Name of Spouse :</label>
+            <label for="spouse">Name of Spouse :</label>
             <input id="spouse" placeholder="Spouse Name" type="text">
+            <div class="alert-box spouse-space"> 
+                Please Enter Spouse Name without Spaces.
+              </div>
             </div>
 
             <!-- Other Details -->
@@ -53,6 +59,9 @@
             <button id="submit" type="submit">Save</button>
             </div>
          </form>
+         <div class="success">
+            <span class="closebtn" onclick="closeHandler()">&times;</span> You have Successfully Submitted the Form!!
+         </div>
     </div>
 
     <script src="./app.js"></script>
