@@ -99,5 +99,11 @@ function displaySpouse(status) {
       other.value="";
       document.getElementById('tnc').checked = false;
 
+    document.querySelector(".fname-space").style.visibility = "hidden";
+    document.querySelector(".lname-space").style.visibility = "hidden";
+    document.querySelector(".gender-space").style.visibility = "hidden";
+    document.querySelector(".spouse-space").style.visibility = "hidden";
+    document.querySelector(".terms-space").style.visibility = "hidden";
+
 
   }
