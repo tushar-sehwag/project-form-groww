@@ -16,7 +16,7 @@
         color:#333;
         border-radius:10px;
     }
-    label{font-size:15px;}
+    label{font-size:16px;}
 
     input, textarea{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -25,11 +25,19 @@
         padding-left:15px;
         width:310px;
         height:30px;
-        font-size:14px;
+        font-size:15px;
         background-repeat:no-repeat;
         background-position:6px;
         border:1px solid #DADADA;
     }
+    textarea {
+        max-width: 310px;
+        min-width: 310px;
+        max-height: 150px;
+        min-height: 30px;
+        padding-top: 10px;
+      }
+
     .radio-inline {display: flex; flex:1}
 
     input.radio{
@@ -56,7 +64,7 @@
         margin-top: 30px;
         padding:10px 25px;
         color:#FFF;
-  
+        font-size: 15px;
         margin-left:5px;
         width:49%
         
@@ -74,7 +82,7 @@
         color:#FFF;
         margin-top: 30px;
         margin-right: 5px;
-     
+        font-size: 15px;
         width:49%
         
     }
@@ -83,14 +91,15 @@
         color:#fff;
     }
 
-    .alert-box, .spouse-space, .fname-space, .lname-space {
-        display: none;
+    .alert-box, .spouse-space, .fname-space, .lname-space, .gender-space, .terms-space {
+        /* display: none; */
+        visibility: hidden;
         width:70%;
-        margin: 10px 10px;
-        padding: 10px;
+        /* margin: 10px 10px; */
+        padding-bottom: 5px; 
         font-size: 13px;
-        background-color: #f44336;
-        color: white;
+        /* background-color: #f44336; */
+        color: #f44336;
       }
       .success {
         display: none;
