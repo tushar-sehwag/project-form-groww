@@ -13,7 +13,7 @@
         <div class="center-align">
             <img id="logo" src="./images/Groww_app_logo.png" alt="">
         </div>
-        <form id="newForm" onsubmit="return validateForm()">
+        <form id="newForm" onsubmit="validateForm">
             <!-- Name -->
             <label for="fname">First Name :</label>
             <input id="fname" placeholder="First Name" type="text" autofocus required oninvalid="this.setCustomValidity('Please Enter First Name Without Spaces')" oninput="this.setCustomValidity('')">
