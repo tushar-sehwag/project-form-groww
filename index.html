@@ -22,6 +22,9 @@
               </div>
             <label for="lname">Last Name :</label>
             <input id="lname" placeholder="Last Name" type="text" required oninvalid="this.setCustomValidity('Please Enter Last Name Here')" oninput="this.setCustomValidity('')">
+            <div class="alert-box lname-space"> 
+                Please Enter Last Name.
+              </div>
 
             <!-- Gender Radio Button-->
             <label>Gender :</label>
@@ -51,7 +54,7 @@
             <textarea id="other" placeholder="Other Details" type="text"></textarea> 
 
             <input class="checkbox" type="checkbox" id="tnc" required oninvalid="this.setCustomValidity('Please Accept our Terms and Conditions')" oninput="this.setCustomValidity('')">
-            <label for="tnc"> I accept the <a href="#">Terms and Conditions</a></label>
+            <label for="tnc"> I accept the <a href="#" class="not-allowed">Terms and Conditions</a></label>
 
             <!-- Submit -->
             <div id="buttons">

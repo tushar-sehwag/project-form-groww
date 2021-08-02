@@ -26,7 +26,13 @@ function displaySpouse(status) {
       document.querySelector(".fname-space").style.display = "block";
       return false;
     }
-  
+    let lastNameTrim = document.forms["newForm"]["lname"].value.trim();
+    if(!lastNameTrim){
+      document.querySelector(".lname-space").style.display = "block";
+      return false;
+    }
+
+
     let spouseName= document.forms["newForm"]["spouse"].value;
     let noOfWordsSpouse= spouseName.split(" ").length;
     if (noOfWordsSpouse>1) {

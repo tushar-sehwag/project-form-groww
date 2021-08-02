@@ -83,7 +83,7 @@
         color:#fff;
     }
 
-    .alert-box, .spouse-space, .fname-space {
+    .alert-box, .spouse-space, .fname-space, .lname-space {
         display: none;
         width:70%;
         margin: 10px 10px;
@@ -110,3 +110,4 @@
         cursor: pointer;
         transition: 0.3s;
       }
+      .not-allowed {cursor: not-allowed;}
